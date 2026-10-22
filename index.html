@@ -3,42 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | GIS Portfolio</title>
+  <title>Peter Larrabee | GIS Portfolio</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; color: #222; line-height: 1.6; }
-    header { background: #1f3a5f; color: white; padding: 3rem 1.5rem; text-align: center; }
-    main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
-    .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
-    .card img { width: 100%; height: 180px; object-fit: cover; }
-    .card div { padding: 1rem; }
+    :root { --green: #2f5d3a; --light: #f4f7f4; --text: #222; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; color: var(--text); line-height: 1.6; background: #fff; }
+    header { background: var(--green); color: white; padding: 3.5rem 1.5rem; text-align: center; }
+    header h1 { margin: 0 0 .25rem; font-size: 2.4rem; }
+    header p { margin: 0; opacity: .9; }
+    main { max-width: 950px; margin: 0 auto; padding: 1.5rem; }
+    h2 { border-bottom: 2px solid var(--green); padding-bottom: .25rem; margin-top: 2.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.5rem; }
+    .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: white; display: flex; flex-direction: column; }
+    .card img { width: 100%; height: 190px; object-fit: cover; background: var(--light); }
+    .card .body { padding: 1rem; display: flex; flex-direction: column; flex: 1; }
+    .card h3 { margin: 0 0 .4rem; }
+    .card p { margin: 0 0 .75rem; flex: 1; }
+    .tag { display: inline-block; background: var(--light); border: 1px solid #cfdccf; border-radius: 12px; padding: 0 .6rem; font-size: .8rem; margin-right: .3rem; }
     a { color: #1f6fb2; }
+    footer { text-align: center; color: #777; padding: 2rem 1rem; font-size: .9rem; }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Your Name</h1>
-    <p>GIS Analyst · Spatial Analysis · Cartography · Python</p>
+    <h1>Peter Larrabee</h1>
+    <p>GIS Portfolio · GEOG 4910</p>
   </header>
+
   <main>
     <h2>About</h2>
-    <p>Two or three sentences about your background and the kind of GIS work you want to do.</p>
+    <p>
+      I am currently a senior studying Forest Ecology &amp; Management, working toward the
+      Applied GIS Certificate. I have previously taken classes to learn how to use
+      ArcGIS Pro, Python, and Google Earth Engine.
+    </p>
 
     <h2>Projects</h2>
     <div class="grid">
+
       <div class="card">
-        <img src="images/project1.png" alt="Map of project 1">
-        <div>
-          <h3>Project Title</h3>
-          <p>One-line description. Tools: ArcGIS Pro, Python.</p>
-          <a href="https://github.com/a02422665-cyber/YOUR-REPO">View on GitHub</a>
+        <img src="images/homerange.png" alt="Map of coyote home ranges in Western Utah" onerror="this.style.display='none'">
+        <div class="body">
+          <h3>Coyote Home Ranges</h3>
+          <p>Displays different home ranges of coyotes in Western Utah.</p>
+          <div>
+            <span class="tag">ArcGIS Pro</span>
+          </div>
+          <p style="margin-top:.75rem"><a href="https://github.com/a02422665-cyber/WATS4930-HomeRange">View project &amp; data on GitHub →</a></p>
         </div>
       </div>
-      <!-- copy the card block for each project -->
+
+      <div class="card">
+        <img src="images/wildfire-risk.png" alt="Map of wildfire risk across Utah" onerror="this.style.display='none'">
+        <div class="body">
+          <h3>Utah Wildfire Risk</h3>
+          <p>Displays which areas of Utah are more susceptible to wildfire risk.</p>
+          <div>
+            <span class="tag">ArcGIS Pro</span>
+          </div>
+          <p style="margin-top:.75rem"><a href="https://github.com/a02422665-cyber/WATS4930-UtahWildfireRisk">View project &amp; data on GitHub →</a></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/different-dem.png" alt="Fishlake National Forest shown at different DEM resolutions" onerror="this.style.display='none'">
+        <div class="body">
+          <h3>DEM Resolution Comparison</h3>
+          <p>Displays a region of the Fishlake National Forest in Utah under different DEM resolutions to help visualize and understand the differences.</p>
+          <p style="margin-top:.75rem"><a href="https://github.com/a02422665-cyber/DifferentDEM">View project &amp; data on GitHub →</a></p>
+        </div>
+      </div>
+
     </div>
 
+    <h2>Skills</h2>
+    <p>
+      <span class="tag">ArcGIS Pro</span>
+      <span class="tag">Python</span>
+      <span class="tag">Google Earth Engine</span>
+    </p>
+
     <h2>Contact</h2>
-    <p><a href="mailto:you@example.com">you@example.com</a> · <a href="https://www.linkedin.com/in/yourname">LinkedIn</a></p>
+    <p>
+      <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a> ·
+      <a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a> ·
+      <a href="https://github.com/a02422665-cyber">GitHub</a>
+    </p>
   </main>
+
+  <footer>© 2026 Peter Larrabee</footer>
+
 </body>
 </html>
